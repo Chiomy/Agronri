@@ -1,0 +1,218 @@
+body{
+    font: 15px/1.5 Arial, Helvetica, sans-serif;
+    padding: 0;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+/* Global */
+.container{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+ ul{
+    margin: 0;
+    padding: 0;
+}
+
+.botton_1{
+    height: 38px;
+    border: none;
+    background: #3d551d;
+    color: #ffffff;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.dark{
+    padding: 15px;
+    background: #3d551d;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* Header */
+header{
+    background: #3d551d;
+    color: #ffffff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #928e8c 5px solid;
+}
+
+header a{
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 18px;
+}
+
+header ul{
+    margin: 0;
+    padding: 0;
+}
+
+header li{
+    float: left;
+    display: inline;
+    padding: 0 20 0 25;
+}
+
+header #branding{
+    float: left;
+}
+
+header #branding h1{
+    margin: 0;
+}
+
+header nav{
+    float: right;
+    margin-top: 12px;
+}
+
+header .highlight, header .current a{
+color: #928e8c;
+font-weight: bold;
+}
+
+header a: hover{
+    color: #green;
+    font-weight:bold;
+}
+
+/* Showcase*/
+#showcase{
+    min-height: 390px;
+    background: url('../img/farmland.jpg') no-repeat 0 -370px;
+    text-align: center;
+    color: #ffffff;
+    outline-color: silver;
+    font-weight: bolder;
+}
+
+#showcase h1{
+    margin-top: 100px;
+    font-size: 55px;
+    margin-bottom: 10px;
+}
+
+#showcase p{
+    font-size: 23px;
+}
+
+/* Newsletter*/
+#newsletter {
+    padding: 15px;
+    color: #ffffff;
+    background: #3d551d;
+    border-bottom: #928e8c 5px solid;
+}
+
+#newsletter h1{
+    float: left;
+}
+
+#newsletter form{
+    float: right;
+    margin-top: 25px;
+}
+
+#newsletter input[type='email']{
+    padding: 7px;
+    height: 25px;
+    width: 250px;
+}
+
+/* Boxes*/
+#boxes{
+    margin-top: 20px;
+}
+
+#boxes .box{
+    float: left;
+    text-align: center;
+    width: 30%;
+    padding: 10px;
+}
+
+#boxes .box img{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+/* Sidebar*/
+aside#sidebar{
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+}
+
+/* Main_col*/
+article#main_col{
+    float: left;
+    width: 65%;
+}
+
+/* Products*/
+ul #products li{
+    list-style: none;
+    padding: 20px;
+    border: #cccccc solid 1px;
+    margin-bottom: 5px;
+}
+
+
+/* Footer*/
+footer{
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+    background-color: #3d551d;
+    color: #ffffff;
+}
+
+footer .social img{
+    width: 30px;
+    height: 30px;
+    padding-left: 12px;
+    text-align: center;
+}
+
+/* Media Queries*/
+@media (max-width: 768px) {
+    header #branding, 
+    header nav, 
+    header nav li,
+    #newsletter h1,
+    #newsletter form,
+    #boxes .box,
+    article#main-col,
+    aside#Sidebar{
+        text-align: center;
+        float: none;
+        width: 100%;
+    }
+
+    header{
+        padding-bottom: 20px;
+    }
+
+    #showcase h1{
+        margin-top: 40px;
+    }
+
+    #newsletter button{
+        display: block;
+        width: 100%;
+    }
+
+    #newsletter form input[type="email"]
+    width: 100%;
+    margin-bottom: 5px;
+}
