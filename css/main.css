@@ -20,9 +20,8 @@ body{
 .botton_1{
     height: 38px;
     border: none;
-    background: #3d551d;
+    background: #b17e1e;
     color: #ffffff;
-    padding-top: 20px;
     padding-left: 20px;
     padding-right: 20px;
 }
@@ -41,7 +40,7 @@ header{
     color: #ffffff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #928e8c 5px solid;
+    border-bottom: #928e8c 2.5px solid;
 }
 
 header a{
@@ -68,6 +67,7 @@ header #branding{
 
 header #branding h1{
     margin: 0;
+    outline-color: rgb(220, 130, 21);
 }
 
 header nav{
@@ -87,11 +87,12 @@ header a: hover{
 
 /* Showcase*/
 #showcase{
-    min-height: 390px;
-    background: url('../img/farmland.jpg') no-repeat 0 -370px;
+    min-height: 395px;
+    background: url('../img/coal.jpg') no-repeat;
+    background-size: cover;
     text-align: center;
     color: #ffffff;
-    outline-color: silver;
+    text-shadow: rgb(209, 125, 16), 10px;
     font-weight: bolder;
 }
 
@@ -102,7 +103,7 @@ header a: hover{
 }
 
 #showcase p{
-    font-size: 23px;
+    font-size: 21px;
 }
 
 /* Newsletter*/
@@ -110,7 +111,7 @@ header a: hover{
     padding: 15px;
     color: #ffffff;
     background: #3d551d;
-    border-bottom: #928e8c 5px solid;
+    border-bottom: #928e8c 2px solid;
 }
 
 #newsletter h1{
@@ -149,26 +150,40 @@ header a: hover{
 /* Sidebar*/
 aside#sidebar{
     float: right;
-    width: 30%;
-    margin-top: 10px;
+    width: 35%;
+    margin-top: 15px;
+}
+
+aside#sidebar .quote input, aside#sidebar .quote textarea{
+    padding: 5px;
+    width: 90%;
 }
 
 /* Main_col*/
 article#main_col{
     float: left;
-    width: 65%;
+    width: 60%;
+    text-align: justify;
 }
 
-/* Products*/
-ul #products li{
+article#main_col p{
+    font-size: 17px;
+}
+
+.page-title{
+    font-size: 23px;
+}
+
+/* Services */
+ul #services li{
     list-style: none;
     padding: 20px;
     border: #cccccc solid 1px;
     margin-bottom: 5px;
+    background: #e6e6e6;
 }
 
-
-/* Footer*/
+/* Footer */
 footer{
     padding: 20px;
     margin-top: 20px;
@@ -182,17 +197,18 @@ footer .social img{
     height: 30px;
     padding-left: 12px;
     text-align: center;
+    filter: brightness(180%)
 }
 
 /* Media Queries*/
-@media (max-width: 768px) {
+@media (max-width: 768px){
     header #branding, 
     header nav, 
     header nav li,
     #newsletter h1,
     #newsletter form,
     #boxes .box,
-    article#main-col,
+    article#main_col,
     aside#Sidebar{
         text-align: center;
         float: none;
@@ -200,7 +216,7 @@ footer .social img{
     }
 
     header{
-        padding-bottom: 20px;
+        padding-bottom: 15px;
     }
 
     #showcase h1{
@@ -210,9 +226,11 @@ footer .social img{
     #newsletter button{
         display: block;
         width: 100%;
+        height: 27px;
+        margin-top: 7px;
     }
 
-    #newsletter form input[type="email"]
+    #newsletter form input[type="email"], .quote input, .quote textarea{
     width: 100%;
     margin-bottom: 5px;
 }
