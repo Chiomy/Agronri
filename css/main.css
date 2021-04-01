@@ -91,7 +91,7 @@ header a: hover{
     background: url('../img/Charcoal.jpeg') no-repeat;
     background-size: cover;
     text-align: center;
-    color: #ffffff;
+    color: #yellow;
     text-shadow: rgb(209, 125, 16), 10px;
     font-weight: bolder;
 }
@@ -233,4 +233,13 @@ footer .social img{
     #newsletter form input[type="email"], .quote input, .quote textarea{
     width: 100%;
     margin-bottom: 5px;
+    }
+    
+    /* Showcase*/
+    #showcase{
+    background: url('../img/Charcoal.jpeg') no-repeat;
+    background-size: cover;
+    text-align: center;
+    text-shadow: rgb(209, 125, 16), 10px;
+    }
 }
