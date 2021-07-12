@@ -1,86 +1,190 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Agricultural food, products and services">
-    <meta name="keywords" content="imort, export, agricultural products, charcoal, hardwool charcoal, pepper, chilii, coal, agric, food">
-    <meta name="author" content="Chioma James">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Agronri | Welcome</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <div id="branding">
-                <h1><span>Agronri</span> Limited</h1>
-            </div>
-            <nav>
-                <ul>
-                    <li class="current"><a href="index.html">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="index.html">Products</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/utilities.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Agronrifoods | Healthy Agricultural Farm Produce For Everyone</title>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <div class="navbar">
+      <div class="container flex">
+        <img src="/images/logos/Agronri2.png" alt="" srcset="" class="logo" />
+        <nav>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
 
-    <section id="showcase">
-        <div class="container">
-            <h1>Agronri</h1>
-            <p>We pride in exporting high quality agricultural produce and raw materials at local and international level.</p>
-            <p>Products are processed and packaged under supervision.</p>
+    <!-- Showcase -->
+    <section class="showcase">
+      <div class="container grid">
+        <div class="showcase-text">
+          <h1>Healthy Agricultural Produce</h1>
+          <p>
+            Get Healthy Agricultural Produce, from large scale enterprise to
+            quantity for everyday use. Fill out the form to contact us today.
+          </p>
+          <a href="services.html" class="btn btn-outline">Read More</a>
         </div>
+
+        <div class="showcase-form card">
+          <h2>Contact Us</h2>
+          <form
+            name="contact"
+            netlify-honeypot="bot-field"
+            method="POST"
+            data-netlify="true"
+          >
+            <input type="hidden" name="form-name" value="contact" />
+            <p class="hidden">
+              <label
+                >Don’t fill this out if you're human: <input name="bot-field"
+              /></label>
+            </p>
+            <div class="form-control">
+              <input type="text" name="name" placeholder="Name" required />
+            </div>
+            <div class="form-control">
+              <input
+                type="text"
+                name="company"
+                placeholder="Company Name"
+                required
+              />
+            </div>
+            <div class="form-control">
+              <input type="email" name="email" placeholder="Email" required />
+            </div>
+            <input type="submit" value="Send" class="btn btn-primary" />
+          </form>
+        </div>
+      </div>
     </section>
 
-    <section id="newsletter">
-        <div class="container">
-            <h1>Subscribe To Our Newsletter</h1>
-            <form netlify>
-                <input type="email" placeholder="Enter Email...">
-                <button type="submit" class="button_1">Subscribe</button>
-            </form>
+    <!-- Stats -->
+    <section class="stats">
+      <div class="container">
+        <h3 class="stats-heading text-center my-1">
+          Welcome to the best platform for building applications of all types
+          with modern architecture and scaling
+        </h3>
+
+        <div class="grid grid-3 text-center my-4">
+          <div>
+            <i class="fas fa-truck fa-3x"></i>
+            <h3>100</h3>
+            <p class="text-secondary">Containers shipped</p>
+          </div>
+          <div>
+            <i class="fas fa-download fa-3x"></i>
+            <h3>50</h3>
+            <p class="text-secondary">Containers Imported</p>
+          </div>
+          <div>
+            <i class="fas fa-building fa-3x"></i>
+            <h3>15</h3>
+            <p class="text-secondary">Cities across Africa</p>
+          </div>
         </div>
+      </div>
     </section>
 
-    <section id="main">
-            <div class="container">
-                <article id="main_col">
-                    <h1 class="page-title" id="about">About Us</h1>
-                    <p>Agronri (Food) aims at supplying organic agricultural products .Our products range from cash crops, fruits, tubers etc.. We pride in exporting high quality agricultural produce and raw materials at a local and international level.Our aim is to meet customers’ satisfaction by providing the best quality produce, compliance with high international standard to meet the global competitive market.
-                    </p>
-                    <br>
-                    <p class="class">We understand the fast growing rise of technology in our world today, and believe in utilizing this opportunity to reach out to our customers on how they can get the best of our products and services.</p>
-                </article>
-    
-                <aside id="sidebar">
-                  <div class="dark">
-                    <h3>What we do</h3>
-                    <p>Our aim is to meet customers’ satisfaction by providing the best quality produce, compliance with high international standard to meet the global competitive market.</p>
-                  </div>
-                </aside>
-    
-                <aside id="sidebar">
-                        <div class="dark">
-                          <h3>Contact Us</h3>
-                          <p><span>Address: </span>9/11 Olabisi Olaitian Street Igando Lagos Nigeria.</p>
-                          <p><span>Email: </span>agronri@gmail.com</p>
-                          <p><span>Phone: </span>+234 806 313 9008</p>
-                        </div>
-                        </div>
-                      </aside>
-    
-            </div>
-        </section>
+    <!-- Cli -->
+    <!-- <section class="cli">
+      <div class="container grid">
+        <img src="images/cli.png" alt="" />
+        <div class="card">
+          <h3>Easy to use, cross platform CLI</h3>
+        </div>
+        <div class="card">
+          <h3>Deploy in seconds</h3>
+        </div>
+      </div>
+    </section> -->
 
-    <footer>
-        <p>Agronri Copyright &copy; 2018</p>
+    <!-- Cloud -->
+    <section class="cloud bg-primary my-2 py-2">
+      <div class="container grid">
+        <div class="text-center">
+          <h2 class="lg">Reliable Export</h2>
+          <p class="lead my-1">
+            Exporting raw materials like you've never seen.
+          </p>
+          <p>Efficient, trust-worthy and scalable</p>
+          <a href="services.html" class="btn btn-dark">Read More</a>
+        </div>
+        <img src="images/coal3.jpeg" alt="" />
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section class="products">
+      <h2 class="md text-center my-2">Avaliable Products</h2>
+      <div class="container flex">
+        <div class="card">
+          <h4>Bitter Kola</h4>
+          <img src="images/products/bitter-kola2.jpg" alt="" />
+        </div>
+        <div class="card">
+          <h4>Cashew</h4>
+          <img src="images/products/Cashew.jpg" alt="" />
+        </div>
+        <div class="card">
+          <h4>sorghum</h4>
+          <img src="images/products/sorghum2.jpg" alt="" />
+        </div>
+        <div class="card">
+          <h4>Tiger nut</h4>
+          <img src="images/products/tigernut.png" alt="" />
+        </div>
+        <div class="card">
+          <h4>Palm oil</h4>
+          <img src="images/products/Palm-oil.jpg" alt="" />
+        </div>
+        <div class="card">
+          <h4>Sesame seed</h4>
+          <img src="images/products/sesame seed.jpg" alt="" />
+        </div>
+        <div class="card">
+          <h4>Ginger</h4>
+          <img src="images/products/ginger.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer bg-dark py-5">
+      <div class="container grid grid-3">
+        <div>
+          <img src="/images/logos/Agronri2.png" alt="" srcset="" class="logo" />
+          <p id="copyright">Copyright &copy; 2021</p>
+        </div>
+        <nav>
+          <ul id="foot">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="products.html">Products</a></li>
+          </ul>
+        </nav>
         <div class="social">
-            <a href="https://www.facebook.com/agronri/"><img src="img/facebook.png" alt="facebook_social" ></a>
-            <a href="https://twitter.com/Agronri"><img src="img/twitter.png" alt="twitter_social"></a>
-            <a href="https://www.instagram.com/agronri/"><img src="img/insta.png" alt="instagram_social"></a>
+          <a href="https://www.facebook.com/agronri/"><i class="fab fa-facebook fa-2x"></i></a>
+          <a href="https://www.instagram.com/agronri/"><i class="fab fa-instagram fa-2x"></i></a>
+          <a href="https://twitter.com/Agronri"><i class="fab fa-twitter fa-2x"></i></a>
         </div>
+      </div>
     </footer>
-</body>
+  </body>
 </html>
